@@ -5,7 +5,7 @@ elif [ -f /usr/local/bin/mate ]; then
     export EDITOR='mate'
     export GIT_EDITOR='mate -wl1'
 else
-	export EDITOR="vim"
+	export EDITOR="nano"
 fi
 # Don’t clear the screen after quitting a manual page
 export MANPAGER="less -X"
@@ -26,6 +26,6 @@ export PGHOST=/tmp
 # no ._ files in archives please
 export COPYFILE_DISABLE=true
 
-export NODE_PATH=/usr/local/lib/node_modules:$NODE_PATH
+#export NODE_PATH=/usr/local/lib/node_modules:$NODE_PATH
 
 export TZ='America/Los Angeles'
